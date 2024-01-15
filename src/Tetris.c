@@ -86,12 +86,12 @@ int main(int argc, char** argv, char** environ)
     InitWindow(windowWidth, windowHeight, "Tetris");
     SetTargetFPS(60);
     InitAudioDevice();
-    soundtrack = LoadMusicStream("Sounds/nutcracker-6-101soundboards.mp3");
+    soundtrack = LoadMusicStream("Assets/Sounds/nutcracker-6-101soundboards.mp3");
     PlayMusicStream(soundtrack);
-    rotateSound = LoadSound("Sounds/se_game_rotate.wav");
-    clearSound = LoadSound("Sounds/clear.wav");
+    rotateSound = LoadSound("Assets/Sounds/se_game_rotate.wav");
+    clearSound = LoadSound("Assets/Sounds/clear.wav");
 
-    Font font = LoadFontEx("Font/monogram.ttf", 64, 0, 0);
+    Font font = LoadFontEx("Assets/Font/monogram.ttf", 64, 0, 0);
     Vector2 scoreNameTextPosition = {30,65};
     Vector2 scoreTextPosition = {50,100};
 

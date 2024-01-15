@@ -1,4 +1,4 @@
-#define TETROMINO_COLORS 8
+#include "Tetromino.h"
 
 const int lTetromino0[] =
 {

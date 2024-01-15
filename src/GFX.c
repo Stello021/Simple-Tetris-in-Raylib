@@ -1,4 +1,5 @@
 #include "Tetris.h"
+#include "Tetromino.h"
 
 void DrawStage(int offsetX, int offsetY)
 {
