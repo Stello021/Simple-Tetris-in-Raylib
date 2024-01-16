@@ -8,6 +8,4 @@
 
 int CheckCollision(const int tetrominoX, const int tetrominoY, const int *tetromino, const int stage[]);
 
-
-
 #endif //TETROMINO_H

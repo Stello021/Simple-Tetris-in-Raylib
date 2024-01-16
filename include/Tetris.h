@@ -13,4 +13,5 @@ void DrawTetromino(const int stageOffsetX, const int stageOffsetY, const int tet
 void ResetLines(int startLineY);
 int DeleteLines();
 int* GetStage();
+
 #endif //TETRIS_H
