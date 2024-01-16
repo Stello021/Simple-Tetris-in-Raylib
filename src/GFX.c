@@ -1,7 +1,8 @@
 #include "Tetris.h"
 #include "Tetromino.h"
 
-void DrawStage(int offsetX, int offsetY)
+
+void DrawStage(int offsetX, int offsetY, const int stage[], const Color colorTypes[])
 {
     for(int y = 0; y < STAGE_HEIGHT; y++)
     {

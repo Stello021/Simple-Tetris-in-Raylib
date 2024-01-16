@@ -41,6 +41,219 @@ const Color colorTypes[TETROMINO_COLORS] =
     { 85, 45, 63, 255 }
 };
 
+const int lTetromino0[] =
+{
+    0, 1, 0, 0,
+    0, 1, 0, 0,
+    0, 1, 1, 0,
+    0, 0, 0, 0,
+};
+
+const int lTetromino90[] =
+{
+    0, 0, 0, 0,
+    1, 1, 1, 0,
+    1, 0, 0, 0,
+    0, 0, 0, 0,
+};
+
+const int lTetromino180[] =
+{
+    1, 1, 0, 0,
+    0, 1, 0, 0,
+    0, 1, 0, 0,
+    0, 0, 0, 0,
+};
+
+const int lTetromino270[] =
+{
+    0, 0, 1, 0,
+    1, 1, 1, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+};
+
+const int jTetromino0[] =
+{
+    0, 1, 0, 0,
+    0, 1, 0, 0,
+    1, 1, 0, 0,
+    0, 0, 0, 0,
+};
+
+const int jTetromino90[] =
+{
+    1, 0, 0, 0,
+    1, 1, 1, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+};
+
+const int jTetromino180[] =
+{
+    0, 1, 1, 0,
+    0, 1, 0, 0,
+    0, 1, 0, 0,
+    0, 0, 0, 0,
+};
+
+const int jTetromino270[] =
+{
+    0, 0, 0, 0,
+    1, 1, 1, 0,
+    0, 0, 1, 0,
+    0, 0, 0, 0,
+};
+
+
+const int oTetromino[] =
+{
+    1, 1, 0, 0,
+    1, 1, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+};
+
+const int sTetromino0[] =
+{
+    0, 0, 0, 0,
+    0, 1, 1, 0,
+    1, 1, 0, 0,
+    0, 0, 0, 0,
+};
+
+const int sTetromino90[] =
+{
+    0, 0, 0, 0,
+    0, 1, 0, 0,
+    0, 1, 1, 0,
+    0, 0, 1, 0,
+};
+
+const int sTetromino180[] =
+{
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 1, 1, 0,
+    1, 1, 0, 0,
+};
+
+const int sTetromino270[] =
+{
+    0, 0, 0, 0,
+    1, 0, 0, 0,
+    1, 1, 0, 0,
+    0, 1, 0, 0,
+};
+
+
+const int tTetromino0[] =
+{
+    0, 0, 0, 0,
+    1, 1, 1, 0,
+    0, 1, 0, 0,
+    0, 0, 0, 0,
+};
+
+const int tTetromino90[] =
+{
+    0, 1, 0, 0,
+    1, 1, 0, 0,
+    0, 1, 0, 0,
+    0, 0, 0, 0,
+};
+
+const int tTetromino180[] =
+{
+    0, 1, 0, 0,
+    1, 1, 1, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+};
+
+const int tTetromino270[] =
+{
+    1, 0, 0, 0,
+    1, 1, 0, 0,
+    1, 0, 0, 0,
+    0, 0, 0, 0,
+};
+
+const int iTetromino0[] =
+{
+    0, 1, 0, 0,
+    0, 1, 0, 0,
+    0, 1, 0, 0,
+    0, 1, 0, 0,
+};
+
+const int iTetromino90[] =
+{
+    0, 0, 0, 0,
+    1, 1, 1, 1,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+};
+
+const int iTetromino180[] =
+{
+    0, 1, 0, 0,
+    0, 1, 0, 0,
+    0, 1, 0, 0,
+    0, 1, 0, 0,
+};
+
+const int iTetromino270[] =
+{
+    0, 0, 0, 0,
+    1, 1, 1, 1,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+};
+
+const int zTetromino0[] =
+{
+    0, 0, 0, 0,
+    1, 1, 0, 0,
+    0, 1, 1, 0,
+    0, 0, 0, 0,
+};
+
+const int zTetromino90[] =
+{
+    0, 1, 0, 0,
+    0, 1, 1, 0,
+    0, 0, 1, 0,
+    0, 0, 0, 0,
+};
+
+const int zTetromino180[] =
+{
+    0, 0, 0, 0,
+    0, 1, 1, 0,
+    1, 1, 0, 0,
+    0, 0, 0, 0,
+};
+
+const int zTetromino270[] =
+{
+    1, 0, 0, 0,
+    1, 1, 0, 0,
+    0, 1, 0, 0,
+    0, 0, 0, 0,
+};
+
+const int *tetrominoTypes[7][4] =
+{
+    {zTetromino0, zTetromino90, zTetromino180, zTetromino270},
+    {sTetromino0, sTetromino90, sTetromino180, sTetromino270},
+    {tTetromino0, tTetromino90, tTetromino180, tTetromino270},
+    {oTetromino, oTetromino, oTetromino, oTetromino},
+    {iTetromino0, iTetromino90, iTetromino180, iTetromino270},
+    {jTetromino0, jTetromino90, jTetromino180, jTetromino270},
+    {lTetromino0, lTetromino90, lTetromino180, lTetromino270},
+};
+
 Music soundtrack;
 Sound clearSound;
 Sound rotateSound;
@@ -48,16 +261,58 @@ Sound rotateSound;
 int score = -100;
 float moveTetrominoDownTimer = 1.f;
 
+int* GetStage()
+{
+  return stage;
+}
 
-//      Number of arguments passed to its
-//      |-------------------------------|
-//         |
-//         |  Array of strings for every arguments passed
-//         |  |---------------------------------------|
-//         |            |
-//         |            |  Array of strings for every environment variables
-//         |            |  |----------------------------------------------|
-//         |            |             |
+void ResetLines(int startLineY)
+{
+    for (int y = startLineY; y >= 0 ; y--)
+    {
+        for (int x = 1; x < STAGE_WIDTH - 1; x++)
+        {
+            const int offset = y * STAGE_WIDTH + x;
+            const int offset_below = (y + 1) * STAGE_WIDTH + x;
+            if(stage[offset_below] == 0 && stage[offset] > 0)
+            {
+                stage[offset_below] = stage[offset];
+                stage[offset] = 0;
+            }
+        }       
+    }
+}
+
+int DeleteLines()
+{
+    int checkLine;
+    for (int y = 0; y < STAGE_HEIGHT - 1; y++)
+    {
+        checkLine = 1;
+        for (int x = 1; x < STAGE_WIDTH - 1; x++)
+        {
+            const int offset = y * STAGE_WIDTH + x;
+            if(stage[offset] == 0)
+            {
+                checkLine = 0;
+                break; //If at least one tile in a row is empty skip to next row
+            }
+        }
+        if(checkLine)
+        {
+            const int offset = y * STAGE_WIDTH + 1;
+            memset(stage + offset, 0, (STAGE_WIDTH - 2) * sizeof(int));
+            ResetLines(y);
+            PlaySound(clearSound);
+            score += 200;
+            if(moveTetrominoDownTimer > 0.2f)
+            {
+            moveTetrominoDownTimer -= 0.15f;
+            }
+        }        
+    }
+    return checkLine;
+}
 int main(int argc, char** argv, char** environ)
 {
     const int windowWidth = 512;
@@ -107,7 +362,7 @@ int main(int argc, char** argv, char** environ)
           {
             currentTetrominoRotation = 0;
           }
-          if(CheckCollision(currentTetrominoX, currentTetrominoY, tetrominoTypes[currentTetrominoType][currentTetrominoRotation]))
+          if(CheckCollision(currentTetrominoX, currentTetrominoY, tetrominoTypes[currentTetrominoType][currentTetrominoRotation], stage))
           {
              currentTetrominoRotation = lastRotation;
           }
@@ -118,18 +373,18 @@ int main(int argc, char** argv, char** environ)
 
         }
         //No need to check position overflow, wall prevent this situation
-        if (IsKeyPressed(KEY_RIGHT) && !CheckCollision(currentTetrominoX + 1, currentTetrominoY, tetrominoTypes[currentTetrominoType][currentTetrominoRotation]))
+        if (IsKeyPressed(KEY_RIGHT) && !CheckCollision(currentTetrominoX + 1, currentTetrominoY, tetrominoTypes[currentTetrominoType][currentTetrominoRotation], stage))
         {
             currentTetrominoX++;
         }
         //No need to check position overflow, wall prevent this situation
-        if (IsKeyPressed(KEY_LEFT)  && !CheckCollision(currentTetrominoX - 1, currentTetrominoY, tetrominoTypes[currentTetrominoType][currentTetrominoRotation]))
+        if (IsKeyPressed(KEY_LEFT)  && !CheckCollision(currentTetrominoX - 1, currentTetrominoY, tetrominoTypes[currentTetrominoType][currentTetrominoRotation], stage))
         {
             currentTetrominoX--;
         }
         if((remainingTime <= 0 || IsKeyPressed(KEY_DOWN)))
         {
-           if(!CheckCollision(currentTetrominoX, currentTetrominoY + 1, tetrominoTypes[currentTetrominoType][currentTetrominoRotation]))
+           if(!CheckCollision(currentTetrominoX, currentTetrominoY + 1, tetrominoTypes[currentTetrominoType][currentTetrominoRotation], stage))
            {
              currentTetrominoY++;
              remainingTime = moveTetrominoDownTimer;           
@@ -149,15 +404,8 @@ int main(int argc, char** argv, char** environ)
                 }
               }
             }
-            if(DeleteLines())
-            {
-                PlaySound(clearSound);
-                score += 200;
-                if(moveTetrominoDownTimer > 0.2f)
-                {
-                moveTetrominoDownTimer -= 0.15f;
-                }
-            }
+            DeleteLines();
+
             currentTetrominoX = tetrominostartX;
             currentTetrominoY = tetrominoStartY;
             currentTetrominoType = GetRandomValue(0, 6);
@@ -182,7 +430,7 @@ int main(int argc, char** argv, char** environ)
         }
         int fullRowCounter = 0;
         //Create Tetris Grid
-        DrawStage(startOffsetX, startOffsetY);
+        DrawStage(startOffsetX, startOffsetY, stage, colorTypes);
         DrawTetromino(startOffsetX, startOffsetY, currentTetrominoX, currentTetrominoY, tetrominoTypes[currentTetrominoType][currentTetrominoRotation], colorTypes[currentColor]);
         EndDrawing();
         GetFrameTime();

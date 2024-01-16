@@ -1,7 +1,7 @@
 #include "Tetris.h"
 #include "Tetromino.h"
 
-int CheckCollision(const int tetrominoX, const int tetrominoY, const int *tetromino)
+int CheckCollision(const int tetrominoX, const int tetrominoY, const int *tetromino, const int stage[])
 {
     for(int y = 0; y < TETROMINO_HEIGHT; y++)
     {
