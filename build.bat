@@ -1,1 +1,0 @@
-clang.exe -o bin/Tetris.exe src/Tetris.c src/CheckCollision.c src/GFX.c -I .\include -L .\include/Libraries/Raylib -l raylibdll
